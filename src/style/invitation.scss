@@ -45,7 +45,7 @@ body {
 
 .search-bar {
   position: relative;
-  margin-top: 1.65em;
+  margin-top: 2.5em;
 
   input {
     width: 100%;
@@ -54,6 +54,13 @@ body {
     font-size: 1.2em;
     opacity: .5;
     outline: none;
+    position: relative;
+    top: -.7em;
+    transition: top .5s ease-in-out;
+
+    &:focus {
+      top: 0;
+    }
   }
 
   img {
@@ -61,14 +68,17 @@ body {
     width: 1.25em;
     height: 1.25em;
     position: absolute;
-    right: .3em;
+    background: white;
+    padding-left: 1.15em;
+    box-sizing: content-box;
+    right: 0;
     bottom: .3em;
   }
 }
 
 main {
   display: block;
-  padding-top: 2.4em;
+  padding-top: 1.55em;
 }
 
 .user {
